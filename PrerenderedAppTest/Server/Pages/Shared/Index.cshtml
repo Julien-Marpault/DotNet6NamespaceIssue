@@ -1,0 +1,9 @@
+﻿@page
+@using PrerenderedAppTest.Server.Pages.Shared
+@using PrerenderedAppTest.Client.Component
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<component type="typeof(Counter)" render-mode="ServerPrerendered" />
